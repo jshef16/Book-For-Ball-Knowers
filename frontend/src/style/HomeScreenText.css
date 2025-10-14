@@ -1,0 +1,32 @@
+@import url('https://fonts.cdnfonts.com/css/tt-drugs-trial');
+@import url('https://fonts.cdnfonts.com/css/arupala-grotesk');
+@import url('https://fonts.cdnfonts.com/css/telegraf');
+
+.home-screen-text {
+    font-family: 'Telegraf', sans-serif;
+  position: relative;
+  z-index: 1;         /* sit above the canvas */
+  color: #fff;
+  text-align: center;
+  pointer-events: auto; /* if you want text selectable/clickable, otherwise use none */
+  user-select: none;
+  padding: 0 1rem;
+}
+
+.home-screen-read {
+  font-family: 'TT Drugs Trial', sans-serif;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  margin: 0;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.home-screen-everything {
+  font-family: 'Arupala Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  margin-top: 0.5rem;}
