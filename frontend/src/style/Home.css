@@ -1,0 +1,17 @@
+@import url('https://fonts.cdnfonts.com/css/tt-drugs-trial');
+@import url('https://fonts.cdnfonts.com/css/arupala-grotesk');
+@import url('https://fonts.cdnfonts.com/css/telegraf');
+
+
+.road-to-the-playoffs {
+    font-family: 'TT Drugs Trial', sans-serif;
+    color: #e3e3e3;
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+.of-prose {
+    font-family: 'TT Drugs Trial', sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
