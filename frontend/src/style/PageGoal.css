@@ -3,12 +3,45 @@
 @import url('https://fonts.cdnfonts.com/css/telegraf');
 
 .page-goal {
-    background-color: rgba(40, 40, 40, 0.5);
+    position: relative;
+    background-color: rgba(115, 115, 129, 0.4);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
-    border-radius: 4rem;
+    border-radius: 1.5rem;
     z-index: 1;
     width: 80%;
     height: auto;
     margin: 1rem 9rem;
 }
+
+.pages-info {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+.total-pages {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* wrapper to position floating label relative to the bar */
+.progress-wrapper {
+    margin-top: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+/* floating label that tracks the bar; translateX centers it on the % point */
+.floating-pages {
+    position: absolute;
+    top: -1.6rem; /* adjust vertical position above the bar */
+    transform: translateX(-50%);
+    background: transparent;
+    color: #fff;
+    font-weight: 700;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
