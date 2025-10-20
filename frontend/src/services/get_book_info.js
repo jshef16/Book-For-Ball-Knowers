@@ -8,8 +8,8 @@ export const getMyBooks = async () => {
         username
         email
         user_books(
-            where: {status_id: {_eq: 3}, _and: {last_read_date: {_gte: "2025/01/01"}}}
-            order_by: {last_read_date: asc}
+            where: {status_id: {_eq: 3}}
+            order_by: {last_read_date: desc_nulls_last}
         ) {
             status_id
             last_read_date
@@ -19,6 +19,7 @@ export const getMyBooks = async () => {
             image {
                 url
             }
+                cached_contributors
             }
         }
         }

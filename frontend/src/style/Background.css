@@ -36,7 +36,6 @@
   width: 100vw;
   max-width: 100vw;
   left: 0;
-  height: 100vh; /* each section fills the viewport vertically */
   overflow: hidden;
 
   /* added: center children (vertical + horizontal) */

@@ -1,0 +1,17 @@
+.shelf-container {
+    font-family: 'TT Drugs Trial', sans-serif;
+    color: #e3e3e3;
+    z-index: 1;
+    margin: 2rem;
+}
+
+.my-shelf {
+    display: block;
+    text-align: left;
+}
+.book-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}

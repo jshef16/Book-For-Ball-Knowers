@@ -56,7 +56,11 @@ function PageGoal() {
         let curTotal = 0;
         books.forEach(ub => {
             const pages = ub.book?.pages || 0;
-            curTotal += pages;
+            const lastRead = ub?.last_read_date ? new Date(ub.last_read_date) : null;
+            if (lastRead && lastRead >= new Date('2025-01-01')) {
+              curTotal += pages;
+            }
+            
         });
 
         setCur_Pages(curTotal);
