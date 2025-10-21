@@ -16,3 +16,26 @@
     font-weight: 400;
     font-size: large;
 }
+
+
+.veil-section-top {
+  position: relative; /* ensure absolute children are positioned to this section */
+}
+
+.about-me-button {
+    position: absolute;
+    margin: 1rem;
+    top: 1rem;
+    right: 1rem;
+    font-family: 'Arupala Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 3; /* above veil and text */
+}

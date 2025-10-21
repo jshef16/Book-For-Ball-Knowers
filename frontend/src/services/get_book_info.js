@@ -67,19 +67,17 @@ export const getTBR = async () => {
       }
     }
   `;
-    const result = await fetch(
-    "https://cors-anywhere.herokuapp.com/https://api.hardcover.app/v1/graphql",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${API_KEY}`,
-      },
-      body: JSON.stringify({
-        query: operationsDoc
-      })
-    }
-  );
+
+  const result = await fetch("http://127.0.0.1:8000/api/proxy/hardcover/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query: operationsDoc
+    })
+  });
+
 
   return await result.json();
 }

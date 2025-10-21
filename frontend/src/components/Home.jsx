@@ -5,12 +5,17 @@ import Shelf from "./Shelf";
 
 import '../style/Home.css';
 
+import { Link } from "react-router-dom";
+
 function Home() {
     return (
         <div className="home-screen">
             <section className="veil-section-top">
                 <DarkVeil />
                 <HomeScreenText />
+                <Link to="/about-me">
+                    <p className="about-me-button">About Me</p>
+                </Link>
             </section>
 
             <section className="veil-section-bottom">
