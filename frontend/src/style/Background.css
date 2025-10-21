@@ -4,6 +4,7 @@
   padding: 0;
   width: 100%;
   height: 100%;
+  background-color: black;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -24,8 +25,6 @@
   left: 0;
   height: 100vh; /* each section fills the viewport vertically */
   overflow: hidden;
-
-  /* added: center children (vertical + horizontal) */
   display: flex;
   align-items: center;
   justify-content: center;
