@@ -12,11 +12,12 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
 import os
+import certifi
 
 @csrf_exempt
 def hardcover_proxy(request):
     if request.method == 'POST':
-        api_key = os.getenv('HARDCOVER_API_KEY')  # Store this in your Django .env
+        api_key = os.getenv('HARDCOVER_API_KEY')  
         headers = {
             'Content-Type': 'application/json',
             'Authorization': f'Bearer {api_key}',
@@ -24,6 +25,7 @@ def hardcover_proxy(request):
         response = requests.post(
             'https://api.hardcover.app/v1/graphql',
             headers=headers,
-            data=request.body
+            data=request.body,
+            verify=certifi.where()
         )
         return JsonResponse(response.json(), safe=False)
